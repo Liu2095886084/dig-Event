@@ -24,8 +24,8 @@ $(function(){
             }
         }
     });
-    // 根路径
-    var root ='http://ajax.frontend.itheima.net'
+
+
     // 用户名注册
     
     $('#form_reg').on('submit',function(e){
@@ -34,7 +34,7 @@ $(function(){
         var data = {username:$('#form_reg [name=username]').val(),password:$('#form_reg [name=password]').val()};
         $.ajax({
             type: "POST",
-            url: root+"/api/reguser",
+            url:"/api/reguser",
             data: data,
             
             success: function (res) {
@@ -51,7 +51,7 @@ $(function(){
         e.preventDefault();
         $.ajax({
             type: "POST",
-            url: root+"/api/login",
+            url: "/api/login",
             data: $(this).serialize(),
             success: function (res) {
                 console.log(res);
