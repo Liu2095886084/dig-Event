@@ -19,12 +19,11 @@
         <div class="title-box"></div>
         <!-- 登录div -->
         <div class="login-box">
-            <form class="layui-form" action="">
+            <form class="layui-form" id="form_login">
                 <!-- 用户名 -->
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-username"></i>
-                    <input type="text" name="title" required lay-verify="required" placeholder="请输入用户名"
-                        autocomplete="off" class="layui-input">
+                    <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
                 </div>
                 <!-- 密码框 -->
                 <div class="layui-form-item">
@@ -45,11 +44,11 @@
         </div>
         <!-- 注册div -->
         <div class="reg-box">
-            <form class="layui-form" action="">
+            <form class="layui-form" id="form_reg">
                 <!-- 用户名 -->
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-username"></i>
-                    <input type="text" name="title" required lay-verify="required" placeholder="请输入用户名"
+                    <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名"
                         autocomplete="off" class="layui-input">
                 </div>
                 <!-- 密码框 -->
@@ -60,7 +59,7 @@
                 </div>
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-password"></i>
-                    <input type="password" name="repassword" required lay-verify="required|repass" placeholder="再次确认密码"
+                    <input type="password" name="repassword" required lay-verify="required|repass|pass" placeholder="再次确认密码"
                         autocomplete="off" class="layui-input">
                 </div>
                 <!-- 注册按钮 -->
