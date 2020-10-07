@@ -24,11 +24,8 @@ $(function(){
             }
         }
     });
-<<<<<<< HEAD
-=======
 
 
->>>>>>> index
     // 用户名注册
     
     $('#form_reg').on('submit',function(e){
@@ -37,11 +34,7 @@ $(function(){
         var data = {username:$('#form_reg [name=username]').val(),password:$('#form_reg [name=password]').val()};
         $.ajax({
             type: "POST",
-<<<<<<< HEAD
-            url: "/api/reguser",
-=======
             url:"/api/reguser",
->>>>>>> index
             data: data,
             
             success: function (res) {
